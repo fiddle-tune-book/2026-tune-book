@@ -90,6 +90,22 @@
     color: var(--ink-soft);
     margin-top: 0.15rem;
   }
+  .qr-link {
+    display: inline-block;
+    margin-top: 1.75rem;
+  }
+  .qr-link img {
+    width: 110px;
+    height: 110px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: #fff;
+    padding: 6px;
+    transition: transform 0.1s ease;
+  }
+  .qr-link:hover img {
+    transform: scale(1.04);
+  }
 </style>
 </head>
 <body>
@@ -115,6 +131,9 @@
         </a>
       </div>
     </div>
+    <a class="qr-link" href="qr.png">
+      <img src="qr.png" alt="QR code linking to this page">
+    </a>
   </div>
 </body>
 </html>
